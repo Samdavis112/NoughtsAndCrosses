@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;700&display=swap');
+
+*{
+    font-family: Asap, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(5, 14, 39);
+}
+
+header{
+    margin-bottom: 40px;
+    padding: 15px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
+
+td{
+    border: 2px solid rgb(190, 190, 190);
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    vertical-align: middle;
+    font-family: Asap, sans-serif;
+    font-size: 70px;
+    cursor: pointer;
+}
+
+table{
+    border-collapse: collapse;
+    position: relative;
+    left: 50%;
+    margin-left: -155px;
+    top: 15px;
+}
+
+table tr:first-child td{
+    border-top: 0;
+}
+table tr:last-child td{
+    border-bottom: 0;
+}
+table tr td:first-child{
+    border-left: 0;
+}
+table tr td:last-child{
+    border-right: 0;
+}
+
+.endgame{
+    display: none;
+    width: 200px;
+    top: 120px;
+    background-color: rgba(205, 133, 63, 0.8);
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-size: 2em;
+}
+
+button{
+    cursor: pointer;
+    margin: 10px;
+    position: absolute;
+    top: 70px;
+    padding: 5px;
+}
+
+
+.colour-white{
+    color: white;
+}
+.colour-black{
+    color: rgb(5, 14, 39);
+}
