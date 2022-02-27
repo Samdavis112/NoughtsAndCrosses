@@ -56,6 +56,7 @@ function startGame(){
     //Setting font colour to black
     for(i = 0; i < 9; i++){
         setCellColour(i, "colour-black")
+        setCellData(i, "");
     }
 }
 
@@ -74,16 +75,20 @@ function onClick(){
 
     let clickedElement = event.target.id;
     let cellNumber = clickedElement;
+    if(getCellData(cellNumber) == ""){
 
-    if(XTurn == true){
-        XTurn = false;
-        setCellColour(cellNumber , "colour-white");
-        setCellData(cellNumber , "X");
-    }
-    else{
-        XTurn = true;
-        setCellColour(cellNumber, "colour-white");
-        setCellData(cellNumber , "O");
+        if(XTurn == true){
+            XTurn = false;
+            setCellColour(cellNumber , "colour-white");
+            setCellData(cellNumber , "X");
+            document.getElementById("Action-Message").innerHTML = "O, make your move..."
+        }
+        else{
+            XTurn = true;
+            setCellColour(cellNumber, "colour-white");
+            setCellData(cellNumber , "O");
+            document.getElementById("Action-Message").innerHTML = "X, make your move..."
+        }
     }
 }
 

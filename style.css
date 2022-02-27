@@ -17,7 +17,7 @@ header{
 }
 
 td{
-    border: 2px solid rgb(190, 190, 190);
+    border: 2px solid rgb(255, 255, 255);
     height: 100px;
     width: 100px;
     text-align: center;
@@ -32,7 +32,9 @@ table{
     position: relative;
     left: 50%;
     margin-left: -155px;
-    top: 15px;
+    top: 30px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
 }
 
 table tr:first-child td{
@@ -48,20 +50,13 @@ table tr td:last-child{
     border-right: 0;
 }
 
-.endgame{
-    display: none;
-    width: 200px;
-    top: 120px;
-    background-color: rgba(205, 133, 63, 0.8);
-    position: absolute;
-    left: 50%;
-    margin-left: -100px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    text-align: center;
-    border-radius: 5px;
+#Action-Message{
+    width: 300px;
+    height: 50px;
+    font-size: 30px;
+    margin: 60px auto;
     color: white;
-    font-size: 2em;
+    text-align: center;
 }
 
 button{
@@ -69,6 +64,7 @@ button{
     margin: 10px;
     position: absolute;
     top: 70px;
+    /*left: 100px*/
     padding: 5px;
 }
 
