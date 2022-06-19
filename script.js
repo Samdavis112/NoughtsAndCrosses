@@ -60,6 +60,10 @@ function startGame(){
     }
 }
 
+function replay(){
+    document.location.reload();
+}
+
 function main(){
 
     //formatting cells 
